@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT2"
+keywords: "Hexo, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -27,7 +27,7 @@ rss:
 menu:
   home: /
   #categories: /categories
-  #about: /about
+#  about: /about
   archives: /archives
   tags: /tags
   #commonweal: /404.html
@@ -117,8 +117,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/milolu/blog
+  简书: http://www.jianshu.com/users/37489315469e/latest_articles
+  765232099: http://www.silencelu.com
 
 
 # Social Links Icons
@@ -132,13 +134,14 @@ social_icons:
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  765232099: qq
+#  Weibo: weibo
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /uploads/avatar.png
 
 
 # Table Of Contents in the Sidebar
@@ -235,7 +238,7 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 19ff6f6ae56af42bc700cf933590d9a4
 
 # Duoshuo ShortName
 #duoshuo_shortname:
