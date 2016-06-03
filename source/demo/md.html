@@ -1,0 +1,72 @@
+---
+layout: false
+title: md
+date: 2016-05-19 15:39:51
+tags: demo
+---
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>基于vuejs的markdown编辑器</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        body{
+            height: 100%;
+        }
+        .bg{
+            padding: 20px 0;
+            min-height: 100%
+        }
+        .view{
+            min-height: 100%
+        }
+        textarea{
+            overflow: visible;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg">
+    <div class="container" id="editor">
+        <div class="row">
+            <div class="col-xs-6">
+                <div>
+                    <textarea class="form-control" rows="30" v-model="input" debounce="300" id="textarea"></textarea>
+                    <button type="button" class="btn btn-default" v-on:click="moreLength" style="margin-top: 10px">textarea加长</button>
+                    <!--<button type="button" class="btn btn-default" onclick="save()" style="margin-top: 10px">保存到本地</button>-->
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="view" v-html="input | marked"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/vue/1.0.14/vue.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+<script>
+    function save(){
+    }
+    new Vue({
+        el: '#editor',
+        data: {
+            input: '# hello',
+            moreLength : function(){
+                $('#textarea').attr('rows', parseInt($('#textarea').attr('rows')) + 20);
+            },
+
+        },
+        filters: {
+            marked: marked
+        }
+    })
+</script>
+</body>
+</html>
