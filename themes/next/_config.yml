@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2015
 
 
 
@@ -30,6 +30,7 @@ menu:
   archives: /archives
 #  categories: /categories
   tags: /tags
+  demo: /demo 
   #commonweal: /404.html
 
 
@@ -47,6 +48,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  demo: coffee
 
 
 
