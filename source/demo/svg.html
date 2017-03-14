@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    .use-text {
+        fill: none;
+        stroke: white;
+        stroke-dashoffset: 35%;
+        stroke-dasharray: 0 87.5%;
+        stroke-width: 2px;
+    }
+    
+    .use-text:nth-child(1) {
+        stroke: #339999;
+        animation: animation1 8s infinite ease-in-out forwards;
+    }
+    
+    .use-text:nth-child(2) {
+        stroke: #CCFFFF;
+        animation: animation2 8s infinite ease-in-out forwards;
+    }
+    
+    .use-text:nth-child(3) {
+        stroke: #FFCCCC;
+        animation: animation3 8s infinite ease-in-out forwards;
+    }
+    
+    .use-text:nth-child(4) {
+        stroke: #646497;
+        animation: animation4 8s infinite ease-in-out forwards;
+    }
+    
+    .use-text:nth-child(5) {
+        stroke: #CC3333;
+        animation: animation5 8s infinite ease-in-out forwards;
+    }
+    
+    @keyframes animation1 {
+        50% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 7%;
+        }
+        70% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 7%;
+        }
+    }
+    
+    @keyframes animation2 {
+        50% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 14%;
+        }
+        70% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 14%;
+        }
+    }
+    
+    @keyframes animation3 {
+        50% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 21%;
+        }
+        70% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 21%;
+        }
+    }
+    
+    @keyframes animation4 {
+        50% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 28%;
+        }
+        70% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 28%;
+        }
+    }
+    
+    @keyframes animation5 {
+        50% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 35%;
+        }
+        70% {
+            stroke-dasharray: 7% 28%;
+            stroke-dashoffset: 35%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: black; width: 1000px; margin: auto;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+            <symbol id="text">
+                <text x="0" y="160" font-family="Verdana" font-size="160">
+                    Hello, World
+                </text>
+            </symbol>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="200">
+            <g>
+                <use xlink:href="#text" class="use-text"></use>
+                <use xlink:href="#text" class="use-text"></use>
+                <use xlink:href="#text" class="use-text"></use>
+                <use xlink:href="#text" class="use-text"></use>
+                <use xlink:href="#text" class="use-text"></use>
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>
