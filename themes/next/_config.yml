@@ -120,7 +120,7 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  GitHub: https://github.com/milolu/blog
+  GitHub: https://github.com/milolu
   简书: http://www.jianshu.com/users/37489315469e/latest_articles
   765232099: http://www.silencelu.com
 
